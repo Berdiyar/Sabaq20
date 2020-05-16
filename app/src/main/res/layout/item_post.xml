@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/mountain_one"
+        android:id="@+id/imagePost"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnLike"
+        android:src="@drawable/like_one"
+        app:layout_constraintTop_toBottomOf="@+id/imagePost"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginTop="@dimen/start_margin"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnDislike"
+        android:src="@drawable/dislike_one"
+        app:layout_constraintTop_toBottomOf="@+id/imagePost"
+        app:layout_constraintStart_toEndOf="@+id/btnLike"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginTop="@dimen/start_margin"
+        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/post"
+            app:layout_constraintStart_toStartOf="@+id/imagePost"
+            app:layout_constraintTop_toBottomOf="@+id/btnLike"
+            app:layout_constraintEnd_toEndOf="@+id/imagePost"
+            android:layout_margin="8dp"
+            android:src="@drawable/mountain_post_one"
+            android:layout_marginBottom="@dimen/start_margin"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
